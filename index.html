@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+
+    <title>Медицинский центр - Новые возможности</title>
+</head>
+
+<body>
+    <header id="header" class="main-header__wrapper">
+        <div class="header container">
+
+            <div class="header-content__left">
+                <div class="header-logo__wrapper">
+                    <a href="#">
+                        <img src="./assets/images/header-logo.svg" alt="Header Logotype">
+                    </a>
+                </div>
+            </div>
+
+            <div class="header-content__right">
+                <div class="header-nav__wrapper">
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li>
+                                <a class="heeader-nav__link" href="#">Результаты</a>
+                            </li>
+                            <li>
+                                <a class="heeader-nav__link" href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a class="heeader-nav__link" href="#">Методы</a>
+                            </li>
+                            <li>
+                                <a class="heeader-nav__link" href="#">Консультация</a>
+                            </li>
+                            <li>
+                                <a class="heeader-nav__link" href="#">Для приезжих</a>
+                            </li>
+                            <li>
+                                <a class="heeader-nav__link" href="#">О нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header-buttons__link">
+                    <div class="header-number__wrapper">
+                        <a href="tel:+7 964 652 72 92">+7 964 652 72 92</a>
+                    </div>
+                    <div class="header-button__wrapper">
+                        <button type="button" class="header-button call-btn">Заказать звонок</button>
+                    </div>
+                    <div class="header-social-icons__wrapper">
+                        <a href="#" class="header-social-icon">
+                            <!-- <img src="./assets/icons/inst-default.svg"> -->
+                        </a>
+                        <a href="#" class="header-social-icon">
+                            <!-- <img src="./assets/icons/vk-default.svg"> -->
+                        </a>
+                        <a href="#" class="header-social-icon">
+                            <!-- <img src="./assets/icons/wu-default.svg"> -->
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main-content__wrapper">
+        <section class="main-content container">
+            <div class="content-left">
+                <div class="main-title__wrapper">
+                    <h1>Восстановление <br> детей и взрослых</h1>
+                    <p class="main-subtitle">с детским церебральным параличом</p>
+                </div>
+                <div class="main-form__wrapper">
+                    <p class="form-description">Коррекция и восстановление современными методами, <br> не имеющими
+                        аналогов в Иркутске</p>
+                    <form class="form-problem__wrapper">
+                        <input type="text" class="input form-problem-input__number" placeholder="+7 ___ ___ __ __">
+                        <div class="custom-select__wrapper">
+                            <input id="customSelect" autocomplete="off" type="input custom-select__input" class="input"
+                                placeholder="Укажите проблему">
+                            <div id="selectOptopnWrapper" class="custom-select-option__wrapper">
+                                <button class="custom-select__option">Тест 1</button>
+                                <button class="custom-select__option">Тест 2</button>
+                                <button class="custom-select__option">Тест 3</button>
+                            </div>
+                        </div>
+
+                        <button type="button" class="form-problem__button">Отправить</button>
+                    </form>
+                    <label for="porblemCheckbox" class="form-problem-checkbox__wrapper">
+                        <input checked id="porblemCheckbox" type="checkbox" class="form-problem__checkbox">
+                        <span class="checkmark"></span>
+                        <p class="checkbox-text">Я согласен на обработку персональных данных</p>
+                    </label>
+
+                </div>
+            </div>
+            <div class="content-right">
+                <img src="./assets/images/main-background.png" alt="">
+            </div>
+        </section>
+        <div class="checklist-button__wrapper container">
+            <a class="checklist-link" href="#">
+                <img class="checklist-img__main" src="./assets/images/checklist.png" alt="Checklist">
+                <img class="checklist-img__text" src="./assets/images/checklist-text.svg">
+            </a>
+
+        </div>
+        <section class="helping__wrapper">
+            <div class="helping-img__wrapper">
+                <img id="helpingBackground" class="helping-img" src="./assets/images/helping-background__green.jpg">
+            </div>
+            <div class="helping-content__wrapper container">
+                <div class="helping-title__wrapper">
+                    <h3>Помогаем</h3>
+                    <p class="helping-subtitle">
+                        восстановить утраченные функции <br>
+                        аппаратными методами
+                    </p>
+                </div>
+                <div class="helping-tabs__warpper">
+                    <button class="tablinks active" onclick="showTabs(event, 'kids')">Работа с детьми от 2
+                        месяцев
+                    </button>
+                    <button class="tablinks" onclick="showTabs(event, 'accident')">Восстановление после ДТП
+                    </button>
+                    <button class="tablinks" onclick="showTabs(event, 'rehab')">Постинсультная реабилитация
+                    </button>
+                </div>
+
+
+
+                <div id="kids" class="tabcontent tabcontent-kids" style="display:flex">
+                    <div class="tab-content__left">
+                        <p class="tab-content__title">
+                            Известие о том, что у ребенка <span class="underline-highlighted">нарушение</span><br>
+                            <span class="wawy-highlighted">развития</span> или <span
+                                class="circle-highlighted">поведения,</span>родителями <br>
+                            воспринимается трагично
+                        </p>
+                        <div class="tab-main__content">
+                            <div class="tab-main__content-title">
+                                И в вашу голову лезут самые <br>
+                                <span class="green-text">страшные вопросы:</span>
+                            </div>
+                            <div class="tab-main__content-questions">
+                                <div class="question-row__wrapper">
+                                    <p class="question">
+                                        Что теперь делать?
+                                    </p>
+                                    <p class="question">
+                                        Как ему помочь?
+                                    </p>
+                                </div>
+                                <p class="question">
+                                    Какое у ребенка будущее?
+                                </p>
+                            </div>
+                            <div class="tab-main__content-answers">
+                                <p class="answer">
+                                    <span class="green-text">Мы знаем ответы</span>
+                                    на эти вопросы и готовы помочь <br> справиться с расстройством!
+                                </p>
+                                <p class="answer">
+                                    <span class="green-text">Наша команда верит,</span>
+                                    что у каждого ребенка есть право <br>
+                                    на счастливое будущее!
+                                </p>
+                                <p class="answer">
+                                    <span class="green-text"> Центр «Новые возможности»</span>
+                                    специализируется на <br> помощи детям с первых лет жизни.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content__right">
+                        <img class="tab-content-right__image tab-content-right__image-cirle "
+                            src="./assets/icons/helping-cirlce-text.svg">
+
+                        <img class="tab-content-right__image tab-content-right__image-1"
+                            src="./assets/images/helping-image-top.png">
+
+
+
+                        <img class="tab-content-right__image tab-content-right__image-main"
+                            src="./assets/images/helping-image-main.png">
+
+
+
+                        <img class="tab-content-right__image tab-content-right__image-2"
+                            src="./assets/images/helping-image-left.png">
+                        <img class="tab-content-right__image tab-content-right__image-3"
+                            src="./assets/images/helping-image-right.png">
+                    </div>
+                </div>
+
+                <div id="accident" class="tabcontent">
+                    <div class="tab-content__left">
+                        <p class="tab-content__title">
+                            Известие о том, что у ребенка <span class="underline-highlighted">нарушение</span><br>
+                            <span class="wawy-highlighted">развития</span> или <span
+                                class="circle-highlighted">поведения,</span>родителями <br>
+                            воспринимается трагично
+                        </p>
+                        <div class="tab-main__content">
+                            <div class="tab-main__content-title">
+                                И в вашу голову лезут самые <br>
+                                <span class="green-text">страшные вопросы:</span>
+                            </div>
+                            <div class="tab-main__content-questions">
+                                <div class="question-row__wrapper">
+                                    <p class="question">
+                                        Что теперь делать?
+                                    </p>
+                                    <p class="question">
+                                        Как ему помочь?
+                                    </p>
+                                </div>
+                                <p class="question">
+                                    Какое у ребенка будущее?
+                                </p>
+                            </div>
+                            <div class="tab-main__content-answers">
+                                <p class="answer">
+                                    <span class="green-text">Мы знаем ответы</span>
+                                    на эти вопросы и готовы помочь <br> справиться с расстройством!
+                                </p>
+                                <p class="answer">
+                                    <span class="green-text">Наша команда верит,</span>
+                                    что у каждого ребенка есть право <br>
+                                    на счастливое будущее!
+                                </p>
+                                <p class="answer">
+                                    <span class="green-text"> Центр «Новые возможности»</span>
+                                    специализируется на <br> помощи детям с первых лет жизни.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content__right">
+                        <img class="tab-content-right__image tab-content-right__image-cirle "
+                            src="./assets/icons/helping-cirlce-text.svg">
+
+                        <img class="tab-content-right__image tab-content-right__image-1"
+                            src="./assets/images/helping-image-top.png">
+
+
+
+                        <img class="tab-content-right__image tab-content-right__image-main"
+                            src="./assets/images/helping-image-main.png">
+
+
+
+                        <img class="tab-content-right__image tab-content-right__image-2"
+                            src="./assets/images/helping-image-left.png">
+                        <img class="tab-content-right__image tab-content-right__image-3"
+                            src="./assets/images/helping-image-right.png">
+                    </div>
+                </div>
+
+                <div id="rehab" class="tabcontent">
+                    <div class="tab-content__left">
+                        <p class="tab-content__title">
+                            Известие о том, что у ребенка <span class="underline-highlighted">нарушение</span><br>
+                            <span class="wawy-highlighted">развития</span> или <span
+                                class="circle-highlighted">поведения,</span>родителями <br>
+                            воспринимается трагично
+                        </p>
+                        <div class="tab-main__content">
+                            <div class="tab-main__content-title">
+                                И в вашу голову лезут самые <br>
+                                <span class="green-text">страшные вопросы:</span>
+                            </div>
+                            <div class="tab-main__content-questions">
+                                <div class="question-row__wrapper">
+                                    <p class="question">
+                                        Что теперь делать?
+                                    </p>
+                                    <p class="question">
+                                        Как ему помочь?
+                                    </p>
+                                </div>
+                                <p class="question">
+                                    Какое у ребенка будущее?
+                                </p>
+                            </div>
+                            <div class="tab-main__content-answers">
+                                <p class="answer">
+                                    <span class="green-text">Мы знаем ответы</span>
+                                    на эти вопросы и готовы помочь <br> справиться с расстройством!
+                                </p>
+                                <p class="answer">
+                                    <span class="green-text">Наша команда верит,</span>
+                                    что у каждого ребенка есть право <br>
+                                    на счастливое будущее!
+                                </p>
+                                <p class="answer">
+                                    <span class="green-text"> Центр «Новые возможности»</span>
+                                    специализируется на <br> помощи детям с первых лет жизни.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content__right">
+                        <img class="tab-content-right__image tab-content-right__image-cirle "
+                            src="./assets/icons/helping-cirlce-text.svg">
+
+                        <img class="tab-content-right__image tab-content-right__image-1"
+                            src="./assets/images/helping-image-top.png">
+
+
+
+                        <img class="tab-content-right__image tab-content-right__image-main"
+                            src="./assets/images/helping-image-main.png">
+
+
+
+                        <img class="tab-content-right__image tab-content-right__image-2"
+                            src="./assets/images/helping-image-left.png">
+                        <img class="tab-content-right__image tab-content-right__image-3"
+                            src="./assets/images/helping-image-right.png">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
