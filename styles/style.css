@@ -763,7 +763,7 @@ input[type=checkbox] {
 .success-img {
     max-width: 1920px;
     width: 100%;
-    height: 1030px;
+    height: 930px;
     position: absolute;
     left: calc(50vw - 960px);
     top: calc(50% - 350px);
@@ -904,7 +904,6 @@ input[type=checkbox] {
     color: var(--color-green);
 }
 
-
 .slick-center .slide-play__button:hover {
 
     animation: checklistRotateActive 2s alternate linear;
@@ -947,26 +946,91 @@ input[type=checkbox] {
     top: 0;
     left: 53%;
     transform: rotate(-27.844deg);
-    animation: lettersAnimation infinite 2s alternate;
+    animation: lettersAnimation infinite 4s alternate;
 }
 
 .letter-c {
     top: -22%;
     left: 74%;
     transform: rotate(-6.844deg);
-    animation: lettersAnimation infinite 4s alternate;
+    animation: lettersAnimation infinite 6s alternate;
 }
 
 .letter-k {
     top: 20%;
     left: 70%;
     transform: rotate(-6.844deg);
-    animation: lettersAnimation infinite 3s alternate;
+    animation: lettersAnimation infinite 5s alternate;
 }
 
 .letters-wrapper-main-image {
     max-width: 960px;
     width: 100%;
 
+    margin: 0 auto 55px;
+}
+
+
+/* PEOPLES HISTORY */
+
+.people-history__wrapper {}
+
+.people-history__title {
+    margin-bottom: 58px;
+}
+
+.people-history__text {
+    font-size: 38px;
+    font-family: var(--font-title);
+    letter-spacing: 1.14px;
+    text-align: center;
+}
+
+.green-text__underline {
+    font-size: 50px;
+    font-family: var(--font-cursive);
+
+    border-bottom: 2px solid var(--color-green);
+}
+
+.user-history__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.user-history {
+    max-width: 98px;
+    width: 100%;
+    overflow: hidden;
+
+  
+
+    cursor: pointer;
+}
+
+.user-history__vk {}
+
+.user-history-vk__image {
+    max-width: 98px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-hisroey__name {
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--color);
+    
+    font-size: 15px;
+    font-family: var(--font-main);
+}
+
+.user-history__container {
+    max-width: 1217px;
+    width: 100%;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }

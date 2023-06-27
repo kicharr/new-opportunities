@@ -45,7 +45,7 @@ window.addEventListener('scroll', () => {
   if (Math.round(pageYOffset) >= 500) {
     helpingBackground.style.cssText = 'transform: rotate(0deg);'
 
-    Math.round(pageYOffset) >= 1000 ? helpingBackground.style.cssText = 'transform: rotate(5deg);' : null
+    Math.round(pageYOffset) >= 1500 ? helpingBackground.style.cssText = 'transform: rotate(5deg);' : null
   } else;
 });
 
@@ -55,10 +55,10 @@ window.addEventListener('scroll', () => {
   const successBackground = document.getElementById('successBackground');
   console.log(Math.round(pageYOffset))
 
-  if (Math.round(pageYOffset) >= 1400) {
+  if (Math.round(pageYOffset) >= 1500) {
     successBackground.style.cssText = 'transform: rotate(0);'
 
-    Math.round(pageYOffset) >= 2000 ? successBackground.style.cssText = 'transform: rotate(-5deg)' : null
+    Math.round(pageYOffset) >= 2500 ? successBackground.style.cssText = 'transform: rotate(-5deg)' : null
   } else;
 });
 
