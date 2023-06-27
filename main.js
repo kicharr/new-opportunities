@@ -53,3 +53,42 @@ window.addEventListener('scroll', () => {
 
 
 // https://xn----7sbbaqhlkm9ah9aiq.net/news-new/fiksatsiya-bloka-pri-prokrutke.html
+
+//SUCCESS SLIDER
+
+// MAIN SLIDER
+$(document).ready(function () {
+  // $('.slider-wrapper').slick({
+  //   arrow: true,
+  //   slidesToShow: 5,
+  // });
+
+
+  $('.slider-wrapper').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 5,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+
