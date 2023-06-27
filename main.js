@@ -47,27 +47,29 @@ window.addEventListener('scroll', () => {
 
     Math.round(pageYOffset) >= 1000 ? helpingBackground.style.cssText = 'transform: rotate(5deg);' : null
   } else;
+});
 
+// SUCCESS BG IMG
+
+window.addEventListener('scroll', () => {
+  const successBackground = document.getElementById('successBackground');
+  console.log(Math.round(pageYOffset))
+
+  if (Math.round(pageYOffset) >= 1400) {
+    successBackground.style.cssText = 'transform: rotate(0);'
+
+    Math.round(pageYOffset) >= 2000 ? successBackground.style.cssText = 'transform: rotate(-5deg)' : null
+  } else;
 });
 
 
-
-// https://xn----7sbbaqhlkm9ah9aiq.net/news-new/fiksatsiya-bloka-pri-prokrutke.html
-
 //SUCCESS SLIDER
 
-// MAIN SLIDER
 $(document).ready(function () {
-  // $('.slider-wrapper').slick({
-  //   arrow: true,
-  //   slidesToShow: 5,
-  // });
-
-
   $('.slider-wrapper').slick({
     centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 5,
+    centerPadding: '0',
+    slidesToShow: 6,
     arrows: false,
     responsive: [
       {
@@ -91,4 +93,3 @@ $(document).ready(function () {
     ]
   });
 });
-

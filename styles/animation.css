@@ -93,3 +93,15 @@
         transform: translate(0);
     }
 }
+
+
+
+@keyframes lettersAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
